@@ -6,28 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://figght.github.io">
-  <title>TMS320F28377D学习笔记-1 | Hexo</title>
+  <title>TMS320F28377D学习笔记-2 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="TMS320F28377D双核DSP学习笔记">
+  <meta name="description" content="解决CCS8无法Import最新C2000Ware的问题由于CCS8使用的编译器版本低于最新的C2000Ware的编译器版本, 所以无法直接导入(Import)例程. 可以去TI官网下载对应版本的编译器. 我使用的C2000WareV4.01.00.00需要的编译器为TI v21.6.0.LTS版本. 故在官网下载v21.6.0.LTS版本. 下载好后, 点击运行, 第一个界面点next, 在第二">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TMS320F28377D学习笔记-1">
-<meta property="og:url" content="https://figght.github.io/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/index.html">
+<meta property="og:title" content="TMS320F28377D学习笔记-2">
+<meta property="og:url" content="https://figght.github.io/2022/06/01/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="TMS320F28377D双核DSP学习笔记">
+<meta property="og:description" content="解决CCS8无法Import最新C2000Ware的问题由于CCS8使用的编译器版本低于最新的C2000Ware的编译器版本, 所以无法直接导入(Import)例程. 可以去TI官网下载对应版本的编译器. 我使用的C2000WareV4.01.00.00需要的编译器为TI v21.6.0.LTS版本. 故在官网下载v21.6.0.LTS版本. 下载好后, 点击运行, 第一个界面点next, 在第二">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://figght.github.io/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/c2000ware.png">
-<meta property="og:image" content="https://figght.github.io/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/controlSuite.png">
-<meta property="og:image" content="https://figght.github.io/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/img1.png">
-<meta property="article:published_time" content="2022-05-31T08:31:23.000Z">
-<meta property="article:modified_time" content="2022-05-31T11:33:52.146Z">
+<meta property="article:published_time" content="2022-06-01T07:01:42.000Z">
+<meta property="article:modified_time" content="2022-06-01T09:16:37.010Z">
 <meta property="article:author" content="张续鹏">
 <meta property="article:tag" content="CCS">
 <meta property="article:tag" content="DSP">
 <meta property="article:tag" content="28377D">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://figght.github.io/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/c2000ware.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -198,14 +194,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-DSP/TMS320F28377D学习笔记-1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-DSP/TMS320F28377D学习笔记-2" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      TMS320F28377D学习笔记-1
+      TMS320F28377D学习笔记-2
     </h1>
   
 
@@ -217,8 +213,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/" class="archive-article-date">
-        <time datetime="2022-05-31T08:31:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-31</time>
+<a href="/2022/06/01/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/" class="archive-article-date">
+        <time datetime="2022-06-01T07:01:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-01</time>
 </a>
 
   
@@ -231,7 +227,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">197字</span>
+      <span class="post-count">259字</span>
     </span>
   </span>
 
@@ -251,20 +247,11 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="TMS320F28377D双核DSP学习笔记"><a href="#TMS320F28377D双核DSP学习笔记" class="headerlink" title="TMS320F28377D双核DSP学习笔记"></a>TMS320F28377D双核DSP学习笔记</h1><span id="more"></span>
-
-<h1 id="安装CCS"><a href="#安装CCS" class="headerlink" title="安装CCS"></a>安装CCS</h1><p>我安装的CCS版本是<code>CCS8.3.1</code></p>
-<p>此章节网上有很多资料, 不作展开.</p>
-<h1 id="安装SDK"><a href="#安装SDK" class="headerlink" title="安装SDK"></a>安装SDK</h1><p>在<a target="_blank" rel="noopener" href="https://www.ti.com.cn/product/cn/TMS320F28377D#software-development">TI官网</a>, 下载C2000WARE和CONTROLSUITE, 然后一步一步安装即可.</p>
-<img src="/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/c2000ware.png" class title="c2000Ware">
-<p><br><br></p>
-<img src="/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/controlSuite.png" class title="controlSUITE">
-
-<p>安装路径可使用默认路径, 也可自定义路径, 但必须能找到.</p>
-<p>安装好后,在CCS中,点击菜单栏<code>View</code>菜单, 选择其中的<code>Resource Explorer Classic</code>. 此时编辑区会弹出<code>TI Resource Explorer</code>界面, 在此界面的上面有个按钮,鼠标悬停时显示<code>Add additional packages</code>, 点击此按钮. 在弹出的<code>Package Configuration</code>弹窗中, 点击<code>Add</code>添加<code>C2000Ware</code>和<code>controlSUITE</code>的路径.</p>
-<img src="/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/img1.png" class title="操作步骤">
-
-<p>添加完成后, 点击<code>OK</code>按钮, 即可在<code>TI Resource Explorer</code>界面左侧栏看到目录. 点击其中想学习的新项目导入即可.</p>
+    <h1 id="解决CCS8无法Import最新C2000Ware的问题"><a href="#解决CCS8无法Import最新C2000Ware的问题" class="headerlink" title="解决CCS8无法Import最新C2000Ware的问题"></a>解决CCS8无法Import最新<code>C2000Ware</code>的问题</h1><p>由于CCS8使用的编译器版本低于最新的<code>C2000Ware</code>的编译器版本, 所以无法直接导入(<code>Import</code>)例程. 可以去<a target="_blank" rel="noopener" href="https://www.ti.com.cn/product/cn/TMS320F28377D#software-development">TI官网</a>下载对应版本的编译器.</p>
+<p>我使用的<code>C2000WareV4.01.00.00</code>需要的编译器为<code>TI v21.6.0.LTS</code>版本. 故在官网下载<code>v21.6.0.LTS</code>版本.</p>
+<p>下载好后, 点击运行, 第一个界面点<code>next</code>, 在第二个界面的地址栏内, 填写CSS的编译器目录. 编译器目录为: <code>&quot;&#123;CCS安装目录&#125;/ccs/tools/compiler&quot;</code>, 例如我的地址为: <code>&quot;D:\About_Program\About_TI\About_CCS9_2\ccs\tools\compiler&quot;</code>. 接下来的界面都点<code>next</code>. </p>
+<p>安装完成后, 打开CCS, 新建CCS工程, 在其中的<code>Compiler version</code>栏的右侧有个<code>More</code>按钮, 点它. 点击弹出的弹窗中右侧的<code>Refresh</code>按钮, 然后点击<code>Apply and Close</code>. 接下来即可在<code>Compiler version</code>下拉菜单中找到<code>TI v21.6.0.LTS</code>版本. </p>
+<h1 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决!"></a>问题解决!</h1><p>接下来就可以尽情导入官方例程了</p>
 
     
 
@@ -311,7 +298,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://figght.github.io/2022/05/31/DSP/TMS320F28377D学习笔记-1/" title="TMS320F28377D学习笔记-1" target="_blank">https://figght.github.io/2022/05/31/DSP/TMS320F28377D学习笔记-1/</a>
+          <a href="https://figght.github.io/2022/06/01/DSP/TMS320F28377D学习笔记-2/" title="TMS320F28377D学习笔记-2" target="_blank">https://figght.github.io/2022/06/01/DSP/TMS320F28377D学习笔记-2/</a>
         </li>
         
         <li>
@@ -397,7 +384,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://figght.github.io/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://figght.github.io/2022/06/01/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -412,18 +399,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2022/06/01/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          TMS320F28377D学习笔记-2
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/05/30/DSP/CCS%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99XDAIS/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">CCS编译报错XDAIS</div>
+    <a href="/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">TMS320F28377D学习笔记-1</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -450,7 +428,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TMS320F28377D%E5%8F%8C%E6%A0%B8DSP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">TMS320F28377D双核DSP学习笔记</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85CCS"><span class="toc-number">2.</span> <span class="toc-text">安装CCS</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85SDK"><span class="toc-number">3.</span> <span class="toc-text">安装SDK</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3CCS8%E6%97%A0%E6%B3%95Import%E6%9C%80%E6%96%B0C2000Ware%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">解决CCS8无法Import最新C2000Ware的问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3"><span class="toc-number">2.</span> <span class="toc-text">问题解决!</span></a></li></ol>
                     </div>
                 </span>
             </div>

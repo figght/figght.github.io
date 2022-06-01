@@ -194,6 +194,104 @@
             
 
   
+    <article id="post-DSP/TMS320F28377D学习笔记-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2022/06/01/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/">TMS320F28377D学习笔记-2</a>
+	
+    </h1>
+  
+
+
+  
+  
+<a href="/2022/06/01/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/" class="archive-article-date">
+        <time datetime="2022-06-01T07:01:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-01</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="解决CCS8无法Import最新C2000Ware的问题"><a href="#解决CCS8无法Import最新C2000Ware的问题" class="headerlink" title="解决CCS8无法Import最新C2000Ware的问题"></a>解决CCS8无法Import最新<code>C2000Ware</code>的问题</h1><p>由于CCS8使用的编译器版本低于最新的<code>C2000Ware</code>的编译器版本, 所以无法直接导入(<code>Import</code>)例程. 可以去<a target="_blank" rel="noopener" href="https://www.ti.com.cn/product/cn/TMS320F28377D#software-development">TI官网</a>下载对应版本的编译器.</p>
+<p>我使用的<code>C2000WareV4.01.00.00</code>需要的编译器为<code>TI v21.6.0.LTS</code>版本. 故在官网下载<code>v21.6.0.LTS</code>版本.</p>
+<p>下载好后, 点击运行, 第一个界面点<code>next</code>, 在第二个界面的地址栏内, 填写CSS的编译器目录. 编译器目录为: <code>&quot;&#123;CCS安装目录&#125;/ccs/tools/compiler&quot;</code>, 例如我的地址为: <code>&quot;D:\About_Program\About_TI\About_CCS9_2\ccs\tools\compiler&quot;</code>. 接下来的界面都点<code>next</code>. </p>
+<p>安装完成后, 打开CCS, 新建CCS工程, 在其中的<code>Compiler version</code>栏的右侧有个<code>More</code>按钮, 点它. 点击弹出的弹窗中右侧的<code>Refresh</code>按钮, 然后点击<code>Apply and Close</code>. 接下来即可在<code>Compiler version</code>下拉菜单中找到<code>TI v21.6.0.LTS</code>版本. </p>
+<h1 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决!"></a>问题解决!</h1><p>接下来就可以尽情导入官方例程了</p>
+
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CCS</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DSP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">28377D</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2022/06/01/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-DSP/TMS320F28377D学习笔记-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
