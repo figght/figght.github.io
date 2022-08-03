@@ -6,16 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://figght.github.io">
-  <title>Archives | Hexo</title>
+  <title>TMS320F28377D学习笔记-4 Bug列表 | Hexo</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://figght.github.io/archives/index.html">
+  <meta name="description" content="TMS320F28377D学习笔记-4 Bug列表">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TMS320F28377D学习笔记-4 Bug列表">
+<meta property="og:url" content="https://figght.github.io/2022/08/03/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-4%20%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="TMS320F28377D学习笔记-4 Bug列表">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-08-03T02:41:05.000Z">
+<meta property="article:modified_time" content="2022-08-03T03:05:04.965Z">
 <meta property="article:author" content="张续鹏">
+<meta property="article:tag" content="CCS">
+<meta property="article:tag" content="DSP">
+<meta property="article:tag" content="28377D">
+<meta property="article:tag" content="问题">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -187,41 +195,140 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-DSP/TMS320F28377D学习笔记-4 问题修复" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
   
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/08/03/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-4%20%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D/" class="archive-article-date">
-        <time datetime="2022-08-03T02:41:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-03</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2022/08/03/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-4%20%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D/">TMS320F28377D学习笔记-4 Bug列表</a>
-	
+    <h1 class="article-title" itemprop="name">
+      TMS320F28377D学习笔记-4 Bug列表
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/2022/08/03/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-4%20%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D/" class="archive-article-date">
+        <time datetime="2022-08-03T02:41:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-08-03</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">305字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">1分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <h1 id="TMS320F28377D学习笔记-4-Bug列表"><a href="#TMS320F28377D学习笔记-4-Bug列表" class="headerlink" title="TMS320F28377D学习笔记-4 Bug列表"></a>TMS320F28377D学习笔记-4 Bug列表</h1><span id="more"></span>
+
+<h1 id="1-连接仿真器时运行正常-但独立运行时无法正常运行"><a href="#1-连接仿真器时运行正常-但独立运行时无法正常运行" class="headerlink" title="1.连接仿真器时运行正常, 但独立运行时无法正常运行"></a>1.连接仿真器时运行正常, 但独立运行时无法正常运行</h1><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>查看定义的全局变量总长度, 若大于2Kbyte, 且编译器为<code>TI v21.6.0.LTS</code>版本, Output format为<code>EABI</code>格式, 则大概率是由于以下原因: </p>
+<blockquote>
+<p>EABI格式会在Boot阶段初始化<code>bss</code>段的变量</p>
+<p>若<code>bss</code>段过大, 则Boot阶段初始化<code>bss</code>段时耗时较长</p>
+<p>而由于28377的看门狗上电时默认启动, 故若初始化耗时过长, 则看门狗就会溢出产生复位信号</p>
+</blockquote>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><h3 id="一-修改Output-format格式"><a href="#一-修改Output-format格式" class="headerlink" title="一 修改Output format格式"></a>一 修改Output format格式</h3><p>在<code>Properties-&gt;General界面</code>, 将<code>Output format</code>选项改为<code>COFF</code>格式.</p>
+<h3 id="二-修改RTS库-并重新编译"><a href="#二-修改RTS库-并重新编译" class="headerlink" title="二 修改RTS库, 并重新编译"></a>二 修改RTS库, 并重新编译</h3><blockquote>
+<p>我有没编译成功</p>
+</blockquote>
+<ol>
+<li>在CCS安装路径下, 找到使用的版本的编译器文件夹. 例如我的是<code>D:\About_Program\About_TI\About_CCS\ccsv8\tools\compiler\ti-cgt-c2000_21.6.0.LTS\lib</code></li>
+<li>在改路径下, 修改<code>src</code>文件夹里面的<code>pre_init.c</code>中的唯一一个函数: <code>_system_pre_init()</code>, 在此函数内添加关闭或修改看门狗时钟的代码.</li>
+<li>使用<code>lib</code>文件夹下的<code>mklib.exe</code>编译库</li>
+<li>在<code>Properties-&gt;General界面</code>, 将<code>Runtime support library</code>选择为自己编译的库.</li>
+</ol>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          张续鹏
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://figght.github.io/2022/08/03/DSP/TMS320F28377D学习笔记-4 问题修复/" title="TMS320F28377D学习笔记-4 Bug列表" target="_blank">https://figght.github.io/2022/08/03/DSP/TMS320F28377D学习笔记-4 问题修复/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -245,302 +352,120 @@
 		</ul>
 	</div>
 
-          
+    
 
+    
+
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://figght.github.io/2022/08/03/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-4%20%E9%97%AE%E9%A2%98%E4%BF%AE%E5%A4%8D/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/07/05/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-3%20%E4%B8%AD%E6%96%AD%E4%BD%93%E7%B3%BB/" class="archive-article-date">
-        <time datetime="2022-07-05T05:26:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-07-05</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/2022/07/05/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-3%20%E4%B8%AD%E6%96%AD%E4%BD%93%E7%B3%BB/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">TMS320F28377D学习笔记-3 中断体系</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2022/07/05/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-3%20%E4%B8%AD%E6%96%AD%E4%BD%93%E7%B3%BB/">TMS320F28377D学习笔记-3 中断体系</a>
-	
-    </h1>
-  
-
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CCS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DSP</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">28377D</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-4-Bug%E5%88%97%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text">TMS320F28377D学习笔记-4 Bug列表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E8%BF%9E%E6%8E%A5%E4%BB%BF%E7%9C%9F%E5%99%A8%E6%97%B6%E8%BF%90%E8%A1%8C%E6%AD%A3%E5%B8%B8-%E4%BD%86%E7%8B%AC%E7%AB%8B%E8%BF%90%E8%A1%8C%E6%97%B6%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E8%BF%90%E8%A1%8C"><span class="toc-number">2.</span> <span class="toc-text">1.连接仿真器时运行正常, 但独立运行时无法正常运行</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E5%9B%A0"><span class="toc-number">2.1.</span> <span class="toc-text">原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-number">2.2.</span> <span class="toc-text">解决方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E4%BF%AE%E6%94%B9Output-format%E6%A0%BC%E5%BC%8F"><span class="toc-number">2.2.1.</span> <span class="toc-text">一 修改Output format格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E4%BF%AE%E6%94%B9RTS%E5%BA%93-%E5%B9%B6%E9%87%8D%E6%96%B0%E7%BC%96%E8%AF%91"><span class="toc-number">2.2.2.</span> <span class="toc-text">二 修改RTS库, 并重新编译</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/06/10/Qt/QML/%E6%89%93%E5%8C%85QML%E7%A8%8B%E5%BA%8F%E6%89%93%E5%BC%80%E5%90%8E%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%95%8C%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="archive-article-date">
-        <time datetime="2022-06-10T01:24:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-10</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2022/06/10/Qt/QML/%E6%89%93%E5%8C%85QML%E7%A8%8B%E5%BA%8F%E6%89%93%E5%BC%80%E5%90%8E%E4%B8%8D%E6%98%BE%E7%A4%BA%E7%95%8C%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">打包QML程序打开后不显示界面的解决方法</a>
-	
-    </h1>
-  
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/06/01/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/" class="archive-article-date">
-        <time datetime="2022-06-01T07:01:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-06-01</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2022/06/01/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/">TMS320F28377D学习笔记-2</a>
-	
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CCS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DSP</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">28377D</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/" class="archive-article-date">
-        <time datetime="2022-05-31T08:31:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-31</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2022/05/31/DSP/TMS320F28377D%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/">TMS320F28377D学习笔记-1</a>
-	
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CCS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DSP</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">28377D</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/05/30/DSP/CCS%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99XDAIS/" class="archive-article-date">
-        <time datetime="2022-05-30T02:05:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-30</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2022/05/30/DSP/CCS%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99XDAIS/">CCS编译报错XDAIS</a>
-	
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CCS</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">DSP</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2022/05/27/Git-Commit-%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/" class="archive-article-date">
-        <time datetime="2022-05-27T14:35:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-27</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/2022/05/27/Git-Commit-%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/">Git Commit 注释规范</a>
-	
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Git</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -581,8 +506,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
